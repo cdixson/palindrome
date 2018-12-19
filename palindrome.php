@@ -35,7 +35,7 @@
     }
     //MAIN
 	if(isset($_POST["userInput"])) {
-			$userStr = filter_var($_POST['userInput'], FILTER_SANITIZE_STRING);  //santize the user input. see, http://php.net/manual/en/function.filter-var.php
+			$userStr = filter_var($_POST['userInput'], FILTER_SANITIZE_STRING);  //sanitize the user input. see, http://php.net/manual/en/function.filter-var.php
 
 			if (checkIfPalindrome($userStr)) {
 				echo '<div class="alert alert-success" role="alert"><strong>'.$userStr.'</strong> is a palindrome!</div>';
